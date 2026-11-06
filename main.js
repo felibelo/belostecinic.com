@@ -105,6 +105,12 @@
     if (x.dates) li.append(el("div", "t-date", x.dates));
     $("experience").append(li);
   });
+  (typeof TEACHING !== "undefined" ? TEACHING : []).forEach((x) => {
+    const li = el("li");
+    li.append(el("div", "t-main", x.role), el("div", "t-sub", x.org));
+    if (x.dates) li.append(el("div", "t-date", x.dates));
+    $("teaching").append(li);
+  });
   EDUCATION.forEach((x) => {
     const li = el("li");
     li.append(el("div", "t-main", x.degree), el("div", "t-sub", x.school));

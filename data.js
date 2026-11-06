@@ -214,6 +214,12 @@ const EXPERIENCE = [
   { role: "Research Analyst", org: "International Monetary Fund, Research Department", dates: "2016–2018" },
 ];
 
+const TEACHING = [
+  { role: "Teaching Fellow", org: "Prof. Cass Sunstein, “Making Change When Change Is Hard”", dates: "2020–2022" },
+  { role: "Research Assistant", org: "Prof. Tarun Khanna (emerging markets strategy)", dates: "2020–2022" },
+  { role: "Research Assistant", org: "Prof. Sebastian Bauhoff (health economics)", dates: "2020–2022" },
+];
+
 const EDUCATION = [
   { degree: "Master in Public Administration in International Development (MPA/ID)", school: "Harvard Kennedy School", year: "2022" },
   { degree: "B.S. in Foreign Service, International Political Economy", school: "Georgetown University, School of Foreign Service", year: "2016" },
