@@ -33,6 +33,7 @@ const SITE = {
     "I am a Research Fellow at the Growth Lab at Harvard University's Center for International Development, where I lead technical analysis on macroeconomic modeling and growth diagnostics for country engagements including Kazakhstan, Saudi Arabia, Azerbaijan, and Morocco.",
     "Before the Growth Lab, I advised governments and NGOs on monitoring and evaluation with IDinsight in West Africa and Morocco, and worked as a Research Analyst in the Research Department of the International Monetary Fund, supporting analysis for the World Economic Outlook. I also co-founded dData, a data analytics startup focused on institutional decision making during crises.",
     "My research interests include economic complexity and diversification, global value chains, innovation and knowledge diffusion, and improving institutional decision making. I hold an MPA in International Development from Harvard Kennedy School and a B.S. in Foreign Service from Georgetown University.",
+    "Outside of work, I cycle, rock-climb, ski, lead hiking trips with the MIT Outing Club, and enjoy learning chess.",
   ],
 
   interests: [
