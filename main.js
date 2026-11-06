@@ -111,6 +111,13 @@
     if (x.year) li.append(el("div", "t-date", x.year));
     $("education").append(li);
   });
+  (typeof VOLUNTEERING !== "undefined" ? VOLUNTEERING : []).forEach((x) => {
+    const li = el("li");
+    li.append(el("div", "t-main", x.role), el("div", "t-sub", x.org));
+    if (x.note) li.append(el("div", "t-sub", x.note));
+    if (x.dates) li.append(el("div", "t-date", x.dates));
+    $("volunteering").append(li);
+  });
 
   // Footer
   $("year").textContent = new Date().getFullYear();
