@@ -18,6 +18,9 @@
 const SITE = {
   name: "Felicia Belostecinic",
   title: "Research Fellow, Growth Lab, Harvard University",
+  // Email is stored in two pieces so spam bots reading the page code don't see it.
+  emailUser: "felicia",
+  emailDomain: "belostecinic.com",
   photo: "images/headshot.jpg", // drop a photo at this path; initials show until then
 
   // Shown in the header. Delete any you don't use, or add more.

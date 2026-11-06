@@ -18,6 +18,14 @@
   $("name").textContent = SITE.name;
   $("title").textContent = SITE.title;
   SITE.profiles.forEach((p) => { const li = el("li"); li.append(link(p.label, p.url)); $("profiles").append(li); });
+  if (SITE.emailUser && SITE.emailDomain) {
+    const li = el("li");
+    const a = el("a", null, "Email");
+    a.href = "mailto:" + SITE.emailUser + "@" + SITE.emailDomain;
+    a.title = SITE.emailUser + "@" + SITE.emailDomain;
+    li.append(a);
+    $("profiles").append(li);
+  }
 
   const img = new Image();
   img.alt = SITE.name;
