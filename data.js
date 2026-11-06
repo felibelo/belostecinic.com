@@ -103,10 +103,10 @@ const PUBLICATIONS = [
   {
     year: 2017,
     type: "Policy Report",
-    title: "World Economic Outlook, October 2017: Seeking Sustainable Growth: Short-Term Recovery, Long-Term Challenges",
-    authors: "International Monetary Fund, Research Department",
-    venue: "International Monetary Fund",
-    note: "Contributed econometric analysis as a Research Analyst in the IMF Research Department.",
+    title: "Within-Country Trends in Income per Capita: The Cases of Brazil, Russia, India, China, and South Africa",
+    authors: "Felicia Belostecinic",
+    venue: "Box 2.1 in World Economic Outlook, October 2017: Seeking Sustainable Growth: Short-Term Recovery, Long-Term Challenges, International Monetary Fund",
+    note: "Also contributed research assistance to Chapter 2.",
     links: [
       { label: "IMF", url: "https://www.imf.org/en/Publications/WEO/Issues/2017/09/19/world-economic-outlook-october-2017" },
     ],
