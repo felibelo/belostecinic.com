@@ -19,14 +19,15 @@
     list.append(dt, dd);
   });
 
-  if (typeof d3 === "undefined" || typeof topojson === "undefined") return;
+  if (typeof d3 === "undefined" || typeof topojson === "undefined") { document.getElementById("map").remove(); return; }
 
   const byId = new Map(PLACES.map((p) => [p.id, p]));
   const W = 960, H = 470;
   const mapEl = document.getElementById("map");
   const tip = document.getElementById("map-tip");
 
-  d3.json("https://cdn.jsdelivr.net/npm/world-atlas@2.0.2/countries-110m.json").then((world) => {
+  if (!window.WORLD_ATLAS) return;
+  Promise.resolve(window.WORLD_ATLAS).then((world) => {
     const countries = topojson.feature(world, world.objects.countries).features
       .filter((f) => f.id !== "010"); // drop Antarctica
     const projection = d3.geoNaturalEarth1().fitExtent([[4, 4], [W - 4, H - 4]], { type: "FeatureCollection", features: countries });
