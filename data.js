@@ -132,6 +132,25 @@ const PROJECTS = [
   },
 ];
 
+/*
+  Map of where I've lived and worked.
+  id = ISO 3166 numeric country code (3 digits, as text). Look one up at
+  https://en.wikipedia.org/wiki/ISO_3166-1_numeric
+*/
+const PLACES = [
+  { name: "Moldova", id: "498", lived: true, worked: true, note: "Home country" },
+  { name: "United States", id: "840", lived: true, worked: true },
+  { name: "Senegal", id: "686", lived: true, worked: true },
+  { name: "Morocco", id: "504", lived: true, worked: true },
+  { name: "Mexico", id: "484", lived: true, worked: false },
+  { name: "United Kingdom", id: "826", lived: true, worked: false },
+  { name: "Nigeria", id: "566", lived: false, worked: true },
+  { name: "Kazakhstan", id: "398", lived: false, worked: true },
+  { name: "Azerbaijan", id: "031", lived: false, worked: true },
+  { name: "Saudi Arabia", id: "682", lived: false, worked: true },
+  { name: "Cambodia", id: "116", lived: false, worked: true },
+];
+
 const EXPERIENCE = [
   { role: "Research Fellow", org: "Growth Lab, Center for International Development, Harvard University", dates: "2022–present" },
   { role: "Co-Founder & Chief Economist", org: "dData", dates: "2021–2023" },

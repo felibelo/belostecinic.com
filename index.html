@@ -25,6 +25,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#projects">Projects</a></li>
+        <li><a href="#places">Places</a></li>
         <li><a href="#cv">CV</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
@@ -60,6 +61,20 @@
       <div id="project-list" class="cards"></div>
     </section>
 
+    <section id="places">
+      <h2>Where I've Lived &amp; Worked</h2>
+      <figure class="map-figure">
+        <div class="map-wrap" id="map" role="img" aria-label="World map of countries where I have lived and worked"></div>
+        <div class="map-tip" id="map-tip" hidden></div>
+        <figcaption class="map-legend">
+          <span><i class="sw sw-both"></i>Lived &amp; worked</span>
+          <span><i class="sw sw-lived"></i>Lived</span>
+          <span><i class="sw sw-worked"></i>Worked with</span>
+        </figcaption>
+      </figure>
+      <dl class="place-list" id="place-list"></dl>
+    </section>
+
     <section id="cv">
       <h2>Experience &amp; Education</h2>
       <div class="two-col">
@@ -86,5 +101,8 @@
 
   <script src="data.js"></script>
   <script src="main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/d3@7.9.0/dist/d3.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js"></script>
+  <script src="map.js"></script>
 </body>
 </html>
