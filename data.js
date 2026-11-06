@@ -133,23 +133,76 @@ const PROJECTS = [
 ];
 
 /*
-  Map of where I've lived and worked.
-  id = ISO 3166 numeric country code (3 digits, as text). Look one up at
+  Map of where I've lived, worked, and traveled.
+  id = ISO 3166 numeric country code (3 digits, as text):
   https://en.wikipedia.org/wiki/ISO_3166-1_numeric
+  Flags: lived / worked / visited. A country gets the strongest category it has
+  (lived & worked > lived > worked with > visited). The "countries visited"
+  count = every country that is lived or visited.
+  Very small countries the map doesn't draw need coords: [longitude, latitude].
 */
 const PLACES = [
+  // Lived & worked
   { name: "Moldova", id: "498", lived: true, worked: true, note: "Home country" },
   { name: "United States", id: "840", lived: true, worked: true },
   { name: "Senegal", id: "686", lived: true, worked: true },
   { name: "Morocco", id: "504", lived: true, worked: true },
-  { name: "Mexico", id: "484", lived: true, worked: false },
-  { name: "United Kingdom", id: "826", lived: true, worked: false },
-  { name: "Nigeria", id: "566", lived: false, worked: true },
-  { name: "Kazakhstan", id: "398", lived: false, worked: true },
-  { name: "Azerbaijan", id: "031", lived: false, worked: true },
-  { name: "Saudi Arabia", id: "682", lived: false, worked: true },
-  { name: "Cambodia", id: "116", lived: false, worked: true },
-  { name: "India", id: "356", lived: false, worked: true },
+  // Lived
+  { name: "Mexico", id: "484", lived: true },
+  { name: "United Kingdom", id: "826", lived: true },
+  { name: "Mauritius", id: "480", lived: true, coords: [57.55, -20.25] },
+  // Worked with
+  { name: "Nigeria", id: "566", worked: true, visited: true },
+  { name: "Kazakhstan", id: "398", worked: true },
+  { name: "Azerbaijan", id: "031", worked: true, visited: true },
+  { name: "Saudi Arabia", id: "682", worked: true, visited: true },
+  { name: "Cambodia", id: "116", worked: true, visited: true },
+  { name: "India", id: "356", worked: true, visited: true },
+  // Visited: Europe
+  { name: "Romania", id: "642", visited: true },
+  { name: "Ukraine", id: "804", visited: true },
+  { name: "Russia", id: "643", visited: true },
+  { name: "Denmark", id: "208", visited: true },
+  { name: "Belgium", id: "056", visited: true },
+  { name: "Netherlands", id: "528", visited: true },
+  { name: "Germany", id: "276", visited: true },
+  { name: "Czech Republic", id: "203", visited: true },
+  { name: "Austria", id: "040", visited: true },
+  { name: "Turkey", id: "792", visited: true },
+  { name: "Georgia", id: "268", visited: true },
+  { name: "Italy", id: "380", visited: true },
+  { name: "Portugal", id: "620", visited: true },
+  { name: "Hungary", id: "348", visited: true },
+  { name: "Spain", id: "724", visited: true },
+  { name: "France", id: "250", visited: true },
+  { name: "Switzerland", id: "756", visited: true },
+  { name: "Ireland", id: "372", visited: true },
+  // Visited: Middle East & North Africa
+  { name: "Israel", id: "376", visited: true },
+  { name: "Qatar", id: "634", visited: true },
+  { name: "Lebanon", id: "422", visited: true },
+  { name: "Palestine", id: "275", visited: true },
+  { name: "Tunisia", id: "788", visited: true },
+  // Visited: Americas
+  { name: "Canada", id: "124", visited: true },
+  { name: "Brazil", id: "076", visited: true },
+  { name: "Nicaragua", id: "558", visited: true },
+  { name: "Dominican Republic", id: "214", visited: true },
+  { name: "Peru", id: "604", visited: true },
+  { name: "Venezuela", id: "862", visited: true },
+  { name: "Bolivia", id: "068", visited: true },
+  { name: "Colombia", id: "170", visited: true },
+  // Visited: Asia
+  { name: "Indonesia", id: "360", visited: true },
+  { name: "Singapore", id: "702", visited: true, coords: [103.82, 1.35] },
+  { name: "Thailand", id: "764", visited: true },
+  { name: "Laos", id: "418", visited: true },
+  { name: "Vietnam", id: "704", visited: true },
+  { name: "Malaysia", id: "458", visited: true },
+  // Visited: Sub-Saharan Africa
+  { name: "South Africa", id: "710", visited: true },
+  { name: "Zambia", id: "894", visited: true },
+  { name: "Kenya", id: "404", visited: true },
 ];
 
 const EXPERIENCE = [
