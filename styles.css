@@ -141,7 +141,7 @@ h3 { font-size: 15px; font-weight: 600; margin: 0 0 10px; }
 .sw-visited { background: var(--visited); }
 .place-stat { margin: 0 0 18px; font-family: var(--serif); font-size: 17px; color: var(--muted); }
 .sw-both { background: repeating-linear-gradient(45deg, var(--lived) 0 3px, var(--worked) 3px 6px); }
-.place-list { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 18px 0 0; font-size: 14px; }
+.place-list { display: grid; grid-template-columns: max-content 1fr; gap: 6px 16px; margin: 14px 0 0; font-size: 14px; }
 .place-list dt { font-weight: 600; white-space: nowrap; }
 .place-list dd { margin: 0; color: var(--muted); }
 
