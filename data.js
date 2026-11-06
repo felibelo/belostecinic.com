@@ -220,7 +220,7 @@ const EDUCATION = [
 ];
 
 const VOLUNTEERING = [
-  { role: "Winter School Trip Leader", org: "MIT Outing Club (MITOC)", dates: "", note: "Wilderness First Aid (WFA) certified" },
+  { role: "Trip Leader, Winter School & 3-Season", org: "MIT Outing Club (MITOC)", dates: "2024–present", note: "Wilderness First Aid (WFA) certified" },
   { role: "Board of Directors", org: "Learning Enterprises", dates: "2021–2025" },
   { role: "Founder & Program Director, Moldova", org: "Learning Enterprises", dates: "2013–2015", note: "Founded an English-teaching program that reached 300+ students in two villages in rural Moldova" },
 ];
