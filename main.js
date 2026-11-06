@@ -28,6 +28,21 @@
   SITE.bio.forEach((t) => $("bio").append(el("p", null, t)));
   SITE.interests.forEach((t) => $("interests").append(el("li", null, t)));
 
+  // Work in progress
+  const wip = typeof WORK_IN_PROGRESS !== "undefined" ? WORK_IN_PROGRESS : [];
+  if (wip.length) {
+    $("wip-list").append(el("h3", "year", "In progress"));
+    const ol = el("ol", "pubs");
+    wip.forEach((w) => {
+      const li = el("li", "pub");
+      li.append(el("span", "badge", "Work in Progress"), el("div", "pub-title", w.title));
+      if (w.authors) li.append(el("div", "pub-authors", w.authors));
+      if (w.description) li.append(el("div", "pub-note", w.description));
+      ol.append(li);
+    });
+    $("wip-list").append(ol);
+  }
+
   // Publications
   const pubs = [...PUBLICATIONS].sort((a, b) => b.year - a.year);
   const types = ["All", ...new Set(pubs.map((p) => p.type).filter(Boolean))];

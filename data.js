@@ -46,6 +46,14 @@ const SITE = {
   ],
 };
 
+// Ongoing research, shown above the publications list.
+const WORK_IN_PROGRESS = [
+  {
+    title: "Innovation and Economic Complexity",
+    description: "Using patent networks to study how knowledge diffuses across countries and how countries build the productive capabilities to move into more complex, higher-value activities.",
+  },
+];
+
 const PUBLICATIONS = [
   {
     year: 2026,
