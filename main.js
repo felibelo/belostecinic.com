@@ -119,6 +119,11 @@
     $("volunteering").append(li);
   });
 
+  (typeof LANGUAGES !== "undefined" ? LANGUAGES : []).forEach((l, i) => {
+    if (i) $("languages").append(" · ");
+    $("languages").append(el("span", "lang", l.name), " ", el("span", "lang-level", "(" + l.level + ")"));
+  });
+
   // Footer
   $("year").textContent = new Date().getFullYear();
 })();

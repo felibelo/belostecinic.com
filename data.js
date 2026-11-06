@@ -225,3 +225,11 @@ const VOLUNTEERING = [
   { role: "Board of Directors", org: "Learning Enterprises", dates: "2021–2025" },
   { role: "Founder & Program Director, Moldova", org: "Learning Enterprises", dates: "2013–2015", note: "Founded an English-teaching program that reached 300+ students in two villages in rural Moldova" },
 ];
+
+const LANGUAGES = [
+  { name: "Romanian", level: "native" },
+  { name: "English", level: "fluent" },
+  { name: "French", level: "fluent" },
+  { name: "Russian", level: "intermediate" },
+  { name: "Spanish", level: "beginner" },
+];

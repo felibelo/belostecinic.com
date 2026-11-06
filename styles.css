@@ -154,3 +154,7 @@ h3 { font-size: 15px; font-weight: 600; margin: 0 0 10px; }
   .topnav ul { gap: 14px; }
 }
 .timeline + .col-sub { margin-top: 28px; }
+.timeline + .col-sub, .langs + .col-sub { margin-top: 28px; }
+.langs { margin: 0; font-size: 14px; line-height: 1.9; }
+.lang { font-weight: 600; }
+.lang-level { color: var(--muted); }
