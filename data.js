@@ -221,8 +221,6 @@ const EDUCATION = [
 
 const VOLUNTEERING = [
   { role: "Board of Directors", org: "Learning Enterprises", dates: "2021–2025" },
-  { role: "Mentor", org: "MentorMe", dates: "2021–present" },
   { role: "Financial Literacy Tutor", org: "IMF Volunteers", dates: "2016–2018" },
   { role: "Founder & Program Director, Moldova", org: "Learning Enterprises", dates: "2013–2015", note: "Founded an English-teaching program that reached 300+ students in two villages in rural Moldova" },
-  { role: "Volunteer English Teacher, Mauritius", org: "Learning Enterprises", dates: "2013" },
 ];
