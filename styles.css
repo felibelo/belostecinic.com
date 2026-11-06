@@ -158,3 +158,5 @@ h3 { font-size: 15px; font-weight: 600; margin: 0 0 10px; }
 .langs { margin: 0; font-size: 14px; line-height: 1.9; }
 .lang { font-weight: 600; }
 .lang-level { color: var(--muted); }
+.langs-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 16px; margin-top: 24px; padding-top: 20px; border-top: 1px dashed var(--line); }
+.langs-row h3 { margin: 0; }
