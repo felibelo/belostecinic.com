@@ -149,6 +149,7 @@ const PLACES = [
   { name: "Azerbaijan", id: "031", lived: false, worked: true },
   { name: "Saudi Arabia", id: "682", lived: false, worked: true },
   { name: "Cambodia", id: "116", lived: false, worked: true },
+  { name: "India", id: "356", lived: false, worked: true },
 ];
 
 const EXPERIENCE = [
