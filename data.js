@@ -24,7 +24,7 @@ const SITE = {
   profiles: [
     { label: "Growth Lab", url: "https://growthlab.hks.harvard.edu/person/felicia-belostecinic/" },
     { label: "Google Scholar", url: "https://scholar.google.com/citations?user=Gy7xBFkAAAAJ&hl=en" },
-    // { label: "LinkedIn", url: "https://www.linkedin.com/in/XXXX" },
+    { label: "LinkedIn", url: "https://www.linkedin.com/in/feliciabelostecinic/" },
     // { label: "CV", url: "papers/Belostecinic_CV.pdf" },
   ],
 
