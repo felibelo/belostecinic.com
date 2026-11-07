@@ -17,7 +17,7 @@
 
 const SITE = {
   name: "Felicia Belostecinic",
-  title: "Research Fellow, Growth Lab, Harvard University",
+  title: "Economist | Research Fellow at Harvard Growth Lab",
   // Email is stored in two pieces so spam bots reading the page code don't see it.
   emailUser: "felicia",
   emailDomain: "belostecinic.com",
